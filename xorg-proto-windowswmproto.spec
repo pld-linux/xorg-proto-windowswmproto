@@ -1,5 +1,5 @@
 Summary:	WindowsWM extension headers
-Summary(pl):	Nag³ówki rozszerzenia WindowsWM.
+Summary(pl):	Nag³ówki rozszerzenia WindowsWM
 Name:		xorg-proto-windowswmproto
 Version:	1.0.1
 Release:	0.1
