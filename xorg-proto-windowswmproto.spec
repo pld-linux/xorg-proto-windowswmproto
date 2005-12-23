@@ -1,12 +1,12 @@
 Summary:	WindowsWM extension headers
 Summary(pl):	Nag³ówki rozszerzenia WindowsWM
 Name:		xorg-proto-windowswmproto
-Version:	1.0.2
+Version:	1.0.3
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/proto/windowswmproto-%{version}.tar.bz2
-# Source0-md5:	811a922dc09ad52341c3abe54b5e1f15
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/proto/windowswmproto-%{version}.tar.bz2
+# Source0-md5:	ed5416cf7e2ba6e66641c88f12768c0c
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc COPYING ChangeLog
 %{_includedir}/X11/extensions/*.h
 %{_pkgconfigdir}/windowswmproto.pc
