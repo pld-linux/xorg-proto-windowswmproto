@@ -1,5 +1,5 @@
 Summary:	WindowsWM extension headers
-Summary(pl):	Nag丑wki rozszerzenia WindowsWM
+Summary(pl.UTF-8):   Nag艂贸wki rozszerzenia WindowsWM
 Name:		xorg-proto-windowswmproto
 Version:	1.0.3
 Release:	1
@@ -16,20 +16,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 WindowsWM extension headers.
 
-%description -l pl
-Nag丑wki rozszerzenia WindowsWM.
+%description -l pl.UTF-8
+Nag艂贸wki rozszerzenia WindowsWM.
 
 %package devel
 Summary:	WindowsWM extension headers
-Summary(pl):	Nag丑wki rozszerzenia WindowsWM
+Summary(pl.UTF-8):   Nag艂贸wki rozszerzenia WindowsWM
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 
 %description devel
 WindowsWM extension headers.
 
-%description devel -l pl
-Nag丑wki rozszerzenia WindowsWM.
+%description devel -l pl.UTF-8
+Nag艂贸wki rozszerzenia WindowsWM.
 
 %prep
 %setup -q -n windowswmproto-%{version}
