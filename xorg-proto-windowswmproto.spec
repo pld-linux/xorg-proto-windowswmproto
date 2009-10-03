@@ -10,14 +10,18 @@ Source0:	http://xorg.freedesktop.org/releases/individual/proto/windowswmproto-%{
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-WindowsWM extension headers.
+WindowsWM extension headers provide the definition of the WindowsWM
+extension to the X11 protocol, used for coordination between an X11
+server and the Microsoft Windows native window manager.
 
 %description -l pl.UTF-8
-Nagłówki rozszerzenia WindowsWM.
+Nagłówki rozszerzenia WindowsWM udostępniają definicję rozszerzenia
+WindowsWM do protokołu X11, służącego do współpracy między serwerem
+X11 a natywnym zarządcą okien Microsoft Windows.
 
 %package devel
 Summary:	WindowsWM extension headers
@@ -26,10 +30,14 @@ Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 
 %description devel
-WindowsWM extension headers.
+WindowsWM extension headers provide the definition of the WindowsWM
+extension to the X11 protocol, used for coordination between an X11
+server and the Microsoft Windows native window manager.
 
 %description devel -l pl.UTF-8
-Nagłówki rozszerzenia WindowsWM.
+Nagłówki rozszerzenia WindowsWM udostępniają definicję rozszerzenia
+WindowsWM do protokołu X11, służącego do współpracy między serwerem
+X11 a natywnym zarządcą okien Microsoft Windows.
 
 %prep
 %setup -q -n windowswmproto-%{version}
@@ -54,6 +62,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
-%{_includedir}/X11/extensions/*.h
+%doc COPYING ChangeLog README
+%{_includedir}/X11/extensions/windowswm*.h
 %{_pkgconfigdir}/windowswmproto.pc
